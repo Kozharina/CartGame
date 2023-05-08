@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "StratosSkyeng";
+  font-style: normal;
+  src: url(./fonts/stratosskyeng-regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "StratosSkyeng";
+  background: #004980;
+  display: flex;
+  justify-content: center;
+}
+
+.difficulty {
+  background: #C2F5FF;
+  border-radius: 12px;
+  width: 480px;
+  height: 459px;
+  margin-top: 158px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.difficulty__choose {
+  display: flex;
+  gap: 12px;
+}
+.difficulty__title {
+  margin-top: 52px;
+  width: 208px;
+  font-size: 40px;
+  color: #004980;
+  text-align: center;
+  font-weight: 400;
+}
+.difficulty__chooseButton {
+  width: 96px;
+  height: 98px;
+  font-size: 64px;
+  color: #0080C1;
+  border-radius: 12px;
+  border-style: none;
+  font-family: "StratosSkyeng";
+}
+.difficulty__chooseButton:hover {
+  opacity: 2;
+  border-style: outset;
+  color: #7AC100;
+  border-color: #004980;
+}
+.difficulty__buttonStart {
+  background: #7AC100;
+  border-radius: 12px;
+  width: 246px;
+  height: 50px;
+  font-size: 24px;
+  margin-bottom: 48px;
+  color: #FFFFFF;
+  border-style: none;
+}
+.difficulty__buttonStart:hover {
+  opacity: 2;
+  border-style: outset;
+  background: #71af05;
+  transform: translate(0, 0.2em);
+}
