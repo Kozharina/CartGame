@@ -1,0 +1,28 @@
+{
+  "name": "cartgame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development --watch",
+    "format": "prettier --write",
+    "lint:js": "eslint ./src/**/*.js",
+    "lint:css": "stylelint ./src/**/*.css",
+    "prepare": "husky install"
+  },
+  "author": "Kozharina",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-prettier": "^3.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
