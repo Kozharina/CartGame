@@ -30,15 +30,18 @@ function checkButtonDifficulty() {
                 chooseButtonElement.classList.remove("-button-active");
             }
             chooseButtonElement.classList.add("-button-active");
-            if (chooseButtonElement.textContent === "1") {
-                window.globalThis.difficulty = "easy";
-                window.globalThis.cards = "6 карточек (3 пары)";
-            } else if (chooseButtonElement.textContent === "2") {
-                window.globalThis.difficulty = "normal";
-                window.globalThis.cards = "12 карточек (6 пар)";
-            } else if (chooseButtonElement.textContent === "3") {
-                window.globalThis.difficulty = "hard";
-                window.globalThis.cards = "18 карточек (9 пар)";
+            switch (chooseButtonElement.textContent) {
+                case "1":
+                    window.globalThis.difficulty = "easy";
+                    break;
+                case "2":
+                    window.globalThis.difficulty = "average";
+                    break;
+                case "3":
+                    window.globalThis.difficulty = "hard";
+                    break;
+                default:
+                    break;
             }
         });
     }
