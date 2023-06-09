@@ -96,6 +96,39 @@ body {
     color: #7ac100;
 }
 
+.difficulty__win {
+    margin-top: 30px;
+    height: 96px;
+    width: 96px;
+    background-image: url(../img/win.svg);
+}
+.difficulty__lose {
+    margin-top: 30px;
+    height: 96px;
+    width: 96px;
+    background-image: url(../img/lose.svg);
+}
+.difficulty__title-win {
+    color: #004980;
+    font-size: 40px;
+    line-height: 48px;
+}
+.difficulty__text {
+    color: #000000;
+    font-size: 24px;
+    line-height: 32px;
+}
+.difficulty__timer {
+    color: #000000;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.game {
+    margin: 22px;
+    margin-bottom: 49px;
+}
+
 .game__title {
     display: flex;
     justify-content: space-between;
@@ -123,7 +156,9 @@ body {
 .game__time {
     font-weight: 400;
     font-size: 64px;
-    color: #fff;
+    color: #fff; 
+    line-height: 72px;
+
 }
 
 .game__again-button {
@@ -158,6 +193,115 @@ body {
 
 .game__cards-button:hover {
     animation: cards__visual 0.3s linear 0s 1 normal forwards;
+}
+
+.preset__spadesA {
+    background-image: url(../img/peaks/ace\ peaks.png);
+}
+.preset__spadesK {
+    background-image: url(../img/peaks/king\ peaks.png);
+}
+.preset__spadesQ {
+    background-image: url(../img/peaks/queen\ peaks.png);
+}
+.preset__spadesJ {
+    background-image: url(../img/peaks/jack\ peaks.png);
+}
+.preset__spades10 {
+    background-image: url(../img/peaks/10\ peaks.png);
+}
+.preset__spades9 {
+    background-image: url(../img/peaks/9\ peaks.png);
+}
+.preset__spades8 {
+    background-image: url(../img/peaks/8\ peaks.png);
+}
+.preset__spades7 {
+    background-image: url(../img/peaks/7\ peaks.png);
+}
+.preset__spades6 {
+    background-image: url(../img/peaks/6\ peaks.png);
+}
+.preset__heartsA {
+    background-image: url(../img/worms/ace\ worms.png);
+}
+.preset__heartsK {
+    background-image: url(../img/worms/king\ worms.png);
+}
+.preset__heartsQ {
+    background-image: url(../img/worms/queen\ worms.png);
+}
+.preset__heartsJ {
+    background-image: url(../img/worms/jack\ worms.png);
+}
+.preset__hearts10 {
+    background-image: url(../img/worms/10\ worms.png);
+}
+.preset__hearts9 {
+    background-image: url(../img/worms/9\ worms.png);
+}
+.preset__hearts8 {
+    background-image: url(../img/worms/8\ worms.png);
+}
+.preset__hearts7 {
+    background-image: url(../img/worms/7\ worms.png);
+}
+.preset__hearts6 {
+    background-image: url(../img/worms/6\ worms.png);
+}
+.preset__diamondsA {
+    background-image: url(../img/diamonds/ace\ diamonds.png);
+}
+.preset__diamondsK {
+    background-image: url(../img/diamonds/king\ diamonds.png);
+}
+.preset__diamondsQ {
+    background-image: url(../img/diamonds/queen\ diamonds.png);
+}
+.preset__diamondsJ {
+    background-image: url(../img/diamonds/jack\ diamonds.png);
+}
+.preset__diamonds10 {
+    background-image: url(../img/diamonds/10\ diamonds.png);
+}
+.preset__diamonds9 {
+    background-image: url(../img/diamonds/9\ diamonds.png);
+}
+.preset__diamonds8 {
+    background-image: url(../img/diamonds/8\ diamonds.png);
+}
+.preset__diamonds7 {
+    background-image: url(../img/diamonds/7\ diamonds.png);
+}
+.preset__diamonds6 {
+    background-image: url(../img/diamonds/6\ diamonds.png);
+}
+.preset__clubsA {
+    background-image: url(../img/baptize/ace\ baptize.png);
+}
+.preset__clubsK {
+    background-image: url(../img/baptize/king\ baptize.png);
+}
+.preset__clubsQ {
+    background-image: url(../img/baptize/queen\ baptize.png);
+}
+.preset__clubsJ {
+    background-image: url(../img/baptize/jack\ baptize.png);
+}
+.preset__clubs10 {
+    background-image: url(../img/baptize/10\ baptize.png);
+}
+.preset__clubs9 {
+    background-image: url(../img/baptize/9\ baptize.png);
+}
+.preset__clubs8 {
+    background-image: url(../img/baptize/8\ baptize.png);
+}
+.preset__clubs7 {
+    background-image: url(../img/baptize/7\ baptize.png);
+}
+.preset__clubs6 {
+    background-image: url(../img/baptize/6\ baptize.png);
 }
 
 @keyframes cards__visual {

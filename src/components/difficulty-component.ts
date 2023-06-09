@@ -1,7 +1,8 @@
-import { presetsCards } from "./cards-component.js";
+import { presetsCards } from "./cards-component";
+import { globalThis } from "../index";
 
 function renderingDifficulty() {
-    window.globalThis.mainElement.innerHTML = `
+    globalThis.mainElement!.innerHTML = `
 <section class="difficulty">
 <h1 class="difficulty__title">Выбери сложность</h1>
 <div class="difficulty__choose">
@@ -32,13 +33,13 @@ function checkButtonDifficulty() {
             chooseButtonElement.classList.add("-button-active");
             switch (chooseButtonElement.textContent) {
                 case "1":
-                    window.globalThis.difficulty = "easy";
+                    globalThis.difficulty = "easy";
                     break;
                 case "2":
-                    window.globalThis.difficulty = "average";
+                    globalThis.difficulty = "average";
                     break;
                 case "3":
-                    window.globalThis.difficulty = "hard";
+                    globalThis.difficulty = "hard";
                     break;
                 default:
                     break;
@@ -46,9 +47,9 @@ function checkButtonDifficulty() {
         });
     }
 
-    startButtonElement.addEventListener("click", () => {
-        if (!window.globalThis.difficulty) {
-            alert("Сначала выберете сложность");
+    startButtonElement!.addEventListener("click", () => {
+        if (!globalThis.difficulty) {
+            alert("С начало выберете сложность");
             return;
         }
         presetsCards();
