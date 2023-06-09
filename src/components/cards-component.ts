@@ -74,7 +74,7 @@ function checkButtonPresets() {
     let cardIndex = 0;
     let timerCheck = false;
     setTimeout(() => {
-        for (const buttonElement of buttonElements as any) {
+        for (const buttonElement of buttonElements) {
             if (buttonElement instanceof HTMLElement) {
                 buttonElement.classList.remove(
                     `preset__${buttonElement.dataset.preset}`
@@ -82,7 +82,7 @@ function checkButtonPresets() {
             }
         }
 
-        for (const buttonElement of buttonElements as any) {
+        for (const buttonElement of buttonElements) {
             if (buttonElement instanceof HTMLElement) {
                 buttonElement.addEventListener("click", () => {
                     buttonElement.classList.add("-button-active");

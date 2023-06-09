@@ -25,9 +25,9 @@ function checkButtonDifficulty() {
         ".difficulty__buttonStart"
     );
 
-    for (const chooseButtonElement of chooseButtonElements as any) {
+    for (const chooseButtonElement of chooseButtonElements) {
         chooseButtonElement.addEventListener("click", () => {
-            for (const chooseButtonElement of chooseButtonElements as any) {
+            for (const chooseButtonElement of chooseButtonElements) {
                 chooseButtonElement.classList.remove("-button-active");
             }
             chooseButtonElement.classList.add("-button-active");
