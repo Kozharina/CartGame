@@ -1,7 +1,10 @@
-import { globalThis } from "../index";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+
+import { globalThis } from "./global";
 
 function randomSuitAndRank(numb: number) {
-    const randomPreset = new Array();
+    const randomPreset = [];
     for (let i = 0; i < numb; i++) {
         if (globalThis.suit.length === 0) {
             globalThis.suit = ["spades", "hearts", "diamonds", "clubs"];
@@ -16,13 +19,13 @@ function randomSuitAndRank(numb: number) {
         globalThis.suit.splice(randomSuit, 1);
         globalThis.rank.splice(randomRank, 1);
     }
-    globalThis.randomPreset = [...randomPreset, ...randomPreset];
-    return;
+
+    return [...randomPreset, ...randomPreset];
 }
 
 function randomButtonElements(numb: number) {
     globalThis.index = numb;
-    let randomButtonElement = new Array();
+    const randomButtonElement = [];
     for (let i = 0; i < numb; i++) {
         const randomI = Math.floor(
             Math.random() * globalThis.randomPreset.length
@@ -39,7 +42,9 @@ function startTime() {
     const timerElement = document.getElementById("timer");
     let sec = 0;
     let min = 0;
-    let t;
+    type NewType = any;
+
+    let t: NewType;
 
     function tick() {
         sec++;
@@ -54,6 +59,10 @@ function startTime() {
     }
 
     function add() {
+        if (globalThis.timerCheck === "on") {
+            clearTimeout(t);
+            return;
+        }
         tick();
         timerElement!.innerHTML =
             (min > 9 ? min : "0" + min) + ":" + (sec > 9 ? sec : "0" + sec);
